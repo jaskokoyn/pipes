@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DoublePipe implements PipeTransform {
 
-  transform(value: number, loop: number = 1 , flip: boolean = false): number {
+  transform(value: number, loop: number = 1, flip: boolean = false): number {
     for (let i = 0; i < loop; i++) {
       value = value * 2;
     }
@@ -13,7 +13,7 @@ export class DoublePipe implements PipeTransform {
     if (flip) {
       value = value * -1;
     }
-    
+
     return value;
   }
 
